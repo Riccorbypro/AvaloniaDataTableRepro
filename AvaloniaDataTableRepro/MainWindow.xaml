@@ -1,0 +1,17 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        Width="1024" Height="600"
+        x:Class="AvaloniaDataTableRepro.MainWindow"
+        Title="AvaloniaDataTableRepro">
+
+    <DataGrid Items="{Binding TableContents}" SelectionMode="Single"
+              CanUserReorderColumns="False">
+        <DataGrid.Columns>
+            <DataGridCheckBoxColumn Header="" Binding="{Binding Selected, Mode=TwoWay}"
+                                    Width="24" />
+            <DataGridTextColumn Header="TextField" Binding="{Binding TextField, Mode=OneWay}" />
+        </DataGrid.Columns>
+    </DataGrid>
+</Window>
