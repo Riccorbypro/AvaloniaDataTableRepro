@@ -6,10 +6,11 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Avalonia" Version="0.9.9"/>
-        <PackageReference Include="Avalonia.Desktop" Version="0.9.9"/>
-        <PackageReference Include="Avalonia.Controls.DataGrid" Version="0.9.9"/>
-        <PackageReference Include="Avalonia.ReactiveUI" Version="0.9.9"/>
+        <PackageReference Include="Avalonia" Version="11.0.5-rc1" />
+        <PackageReference Include="Avalonia.Themes.Fluent" Version="11.0.5-rc1" />
+        <PackageReference Include="Avalonia.Desktop" Version="11.0.5-rc1" />
+        <PackageReference Include="Avalonia.Controls.DataGrid" Version="11.0.5-rc1" />
+        <PackageReference Include="Avalonia.ReactiveUI" Version="11.0.5-rc1" />
     </ItemGroup>
 
     <ItemGroup>

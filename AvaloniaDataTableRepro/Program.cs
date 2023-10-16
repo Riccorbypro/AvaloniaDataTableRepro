@@ -1,6 +1,5 @@
 ﻿using Avalonia;
 using Avalonia.Controls;
-using Avalonia.Logging.Serilog;
 using Avalonia.ReactiveUI;
 
 namespace AvaloniaDataTableRepro {
@@ -15,7 +14,6 @@ namespace AvaloniaDataTableRepro {
         public static AppBuilder BuildAvaloniaApp(string[] args)
             => AppBuilder.Configure<App>()
                 .UsePlatformDetect()
-                .LogToDebug()
                 .UseReactiveUI()
                 .UseSkia();
     }

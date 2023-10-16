@@ -6,7 +6,7 @@
         x:Class="AvaloniaDataTableRepro.MainWindow"
         Title="AvaloniaDataTableRepro">
 
-    <DataGrid Items="{Binding TableContents}" SelectionMode="Single"
+    <DataGrid ItemsSource="{Binding TableContents}" SelectionMode="Single"
               CanUserReorderColumns="False">
         <DataGrid.Columns>
             <DataGridCheckBoxColumn Header="" Binding="{Binding Selected, Mode=TwoWay}"
